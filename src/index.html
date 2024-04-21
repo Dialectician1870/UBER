@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Huuber</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -16,8 +17,8 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
@@ -32,7 +33,7 @@
 
         <div class="subheader">
             <div class="container">
-                <div class="row text-center">
+                <div class="row">
                     <div class="col-6 col-md-4 offset-md-1">
                         <a href="#" class="subheader_logo"><img src="icons/Uber.png" alt="logo"></a>
                         <div class="subheader_official">Официальный партнер Uber в Москве</div>
@@ -199,7 +200,7 @@
             </div>
         </div>
     </section>
-<!-- 
+ 
     <section class="mobile">
         <div class="container">
             <div class="label">Возможности</div>
@@ -209,7 +210,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_1">
                         <div class="mobile_item_subtitle">
                             оформление заказа одним касанием
@@ -217,7 +218,7 @@
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_2">
                         <div class="mobile_item_subtitle">
                             надежная подача
@@ -225,7 +226,7 @@
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_3">
                         <div class="mobile_item_subtitle">
                             надежная подача
@@ -233,7 +234,7 @@
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_4">
                         <div class="mobile_item_subtitle">
                             безналичная оплата
@@ -241,7 +242,7 @@
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_5">
                         <div class="mobile_item_subtitle">
                             обратная связь
@@ -249,7 +250,7 @@
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_6">
                         <div class="mobile_item_subtitle">
                             разделить стоимость поездки
@@ -264,14 +265,14 @@
     <section class="choise">
         <div class="container">
             <div class="label label_white">Возможности</div>
-            <div class="title title_white">Выбор - отличная штука!</div>
-            <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
+            <div class="title title_white hidden-320">Выбор - отличная штука!</div>
+            <div class="subtitle subtitle_white hidden-320">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
             <img src="img/Автомобиль.png" alt="car" class="choise_img">
             <div class="choise_descr">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси</div>
         </div>
     </section>
 
-    <section class="require">
+    <section class="require" id="require">
         <div class="container">
             <div class="label">возможности</div>
             <div class="title">условия и требования</div>
@@ -339,33 +340,59 @@
 
     <footer>
         <div class="footer_divider"></div>
-        <div class="footer_links_main">
-            <a href="#">на главную</a>
-            <a href="#">города</a>
-            <a href="#">для водителей</a>
-        </div>
-        <div class="footer_links_sub">
-            <a href="#" class="bigger_link">центр поддержки</a>
-            <a href="#" class="bigger_link">вакансии</a>
-            <a href="#" class="bigger_link">разработчики</a>
-            <a href="#" class="bigger_link">блог</a>
-            <a href="#" class="bigger_link">о нас</a>
-        </div>
-        <a href="#" class="footer_links_lang">русский</a>
-        <div class="footer_social">
-            <div class="footer_social_media">
-                <a href="#"><span class="icon-facebook-f"></span></a>
-                <a href="#"><span class="icon-twitter"></span></a>
-                <a href="#"><span class="icon-linkedin-in"></span></a>
-                <a href="#"><span class="icon-instagram"></span></a>
+        <div class="footer_wrapper">
+            <div>
+                <div class="footer_social">
+                    <a href="#" class="footer_social_item">
+                        <span class="icon-facebook-f"></span>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <span class="icon-linkedin-in"></span>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <span class="icon-instagram"></span>
+                    </a>
+                </div>
             </div>
-            <div class="mobile_store">
-                <a href="#"><img src="img/app_store.png" alt="kall" class="size"></a>
-                <a href="#"><img src="img/gogle_play.png" alt="kall" class="size"></a>
-                <a href="#"><img src="img/win_store.png" alt="kall" class="size"></a>
+            <div>
+                <div class="footer_links">
+                    <div class="footer_links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">города</a>
+                        <a href="#">для водителей</a>
+                    </div>
+                    <div class="footer_links_sub">
+                        <div>
+                            <a href="#">центр поддержки</a>
+                            <a href="#">вакансии</a>
+                        </div>
+                        <div>
+                            <a href="#">раз работчики</a>
+                            <a href="#">блог</a>
+                            <a href="#">о нас</a>
+                        </div>
+                    </div>
+                    <a href="#" class="footer_links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer_mobile">
+                    <a href="#">
+                        <img src="img/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/windows_store.png" alt="Windows store">
+                    </a>
+                </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

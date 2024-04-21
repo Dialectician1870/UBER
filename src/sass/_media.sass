@@ -1,7 +1,7 @@
 @media (max-width: 1200px)
     .menu
         &_item
-            padding-right: 22px
+            padding-right: 18px
         &_link
             font-size: 13px
     .promo
@@ -12,6 +12,32 @@
             align-items: flex-start
         &_descr
             width: 300px
+    .mobile
+        &_item
+            width: 290px
+            &_subtitle
+                font-size: 22px
+    .choise
+        padding: 55px 0
+        min-height: 840px
+    .require
+        br
+            display: none
+    .footer
+        &_wrapper > div
+            width: 50%
+            &:nth-child(1)
+                width: 25%
+            &:nth-child(3)
+                width: 25%
+                display: flex
+                justify-content: flex-end
+        &_mobile
+            display: flex
+            a
+                margin: 0 3px
+                img
+                    width: 100%
 @media (max-width: 991px)           
     .menu
         &_item
@@ -41,9 +67,34 @@
             align-items: center
         &_descr
             margin-top: 20px
+            width: 300px
         &_circle
             margin-right: 0
+    .choise
+        min-height: 800px
+        &_img
+            width: 100%
+    .world
+        min-height: 650px
+    .footer
+        &_wrapper
+            flex-wrap: wrap
+        &_wrapper > div
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+            &:nth-child(1)
+                width: 100%
+            &:nth-child(3)
+                width: 100%
+                justify-content: center
+                
+
 @media (max-width: 767px)
+    .title
+        margin-top: 20px
+        font-size: 29px
     .menu
         position: fixed
         flex-direction: column
@@ -110,6 +161,19 @@
     .promo
         &_header
             line-height: 45px
+    .reasons
+        padding: 40px 0
+        &_descr
+            width: 400px
+    .mobile
+        padding: 40px 0
+    .choise
+        padding: 40px 0
+        min-height: 600px
+    .require
+        padding: 40px 0
+    .world
+        min-height: 600px
 @media (max-width: 575px)
     header
         height: 30px
@@ -134,6 +198,8 @@
             height: 22px
             font-size: 10px
             margin-top: 6px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .promo
         min-height: 400px
         padding: 93px 0 35px 0
@@ -152,8 +218,26 @@
             line-height: 30px
         &_btn
             margin-top: 72px
+            width: 210px
+            height: 50px
+            font-size: 16px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .menu
         width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px 0
+            a
+                display: block
+    .hamburger
+        &_active 
+            span 
+                &:nth-child(1)
+                    transform: translateY(5px) rotate(-45deg)
+                &:nth-child(3)
+                    transform: translateY(5px) rotate(45deg)
     .reasons
         padding: 22px 0 36px 0
         &_block
@@ -170,3 +254,85 @@
         font-size: 16px
         margin-top: 15px
         line-height: 16px
+    .mobile
+        padding: 4
+        &_item
+            margin-top: 30px
+            width: 294px
+            &_subtitle
+                font-size: 18px
+                padding: 0 20px
+            &_plus
+                bottom: 21px
+    .choise
+        background: #070716
+        padding: 25px 0 30px 0
+        min-height: 390px
+        .hidden-320
+            display: none
+        &_descr
+            color: #ffffff
+            width: 100%
+    .require
+        padding: 24px 0 15px 0
+        min-height: 960px
+        &_title
+            margin-top: 32px
+            font-size: 16px
+            padding-left: 9px
+        &_list
+            padding-left: 38px
+            li
+                font-size: 14px
+        &_descr
+            font-size: 14px
+            padding-left: 7px
+            margin-top: 20px
+    .world
+        padding: 24px 0 30px 0
+        min-height: 360px
+        .subtitle
+            font-size: 14px
+            margin-top: 6px
+        &_cities
+            margin-top: 212px
+            line-height: 15px
+    footer
+        min-height: 256px
+        padding: 24px 23px 10px 23px
+    .footer 
+        &_divider
+            width: 253px
+        &_wrapper
+            padding-top: 0
+        &_wrapper > div
+            &:nth-child(1)
+                order: 2
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                order: 3
+        &_links
+            &_sub
+                flex-wrap: wrap
+                padding: 0 10px
+            &_sub > div
+                display: flex
+                width: 100%
+                justify-content: space-between
+                &:nth-child(2)
+                    margin-top: 14px
+                a
+                    display: block
+                    line-height: 11px
+            &_main
+                margin-top: 21px
+                padding: 0
+                width: 100%
+                a
+                    display: block
+                    font-size: 14px
+                    color: #070716
+            &_lang
+                margin-top: 10px
+                
